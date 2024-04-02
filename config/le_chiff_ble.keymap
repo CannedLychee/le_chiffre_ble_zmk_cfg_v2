@@ -6,63 +6,25 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 // makes it possible to hold backspace
 
-&lt { quick_tap_ms = <200>; };
-
-&soft_off {
-    hold-time-ms = <5000>; // Only turn off it the key is held for 5 seconds or longer.
-};
+&lt { quick_tap_ms = <140>; };
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        left_bkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
+        less {
+            bindings = <&kp LT>;
+            key-positions = <27 28>;
         };
 
-        right_bkt {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
-        };
-
-        left_par {
-            bindings = <&kp LPAR>;
-            key-positions = <12 13>;
-        };
-
-        right_par {
-            bindings = <&kp RPAR>;
-            key-positions = <16 17>;
-        };
-
-        left_prc {
-            bindings = <&kp LBRC>;
-            key-positions = <22 23>;
-        };
-
-        right_prc {
-            bindings = <&kp RBRC>;
-            key-positions = <27 26>;
-        };
-
-        blsh {
-            bindings = <&kp BSLH>;
-            key-positions = <4 5>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <14 15>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 18>;
+        more {
+            bindings = <&kp GT>;
+            key-positions = <28 29>;
         };
     };
 
@@ -84,10 +46,10 @@
         default {
             label = "Qwerty";
             bindings = <
-&kp Q       &kp W           &kp E        &kp R             &kp T        &kp Y      &kp U              &kp I        &kp O            &kp P
-&hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G        &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
-&kp Z       &kp X           &kp C        &kp V             &kp B        &kp N      &kp M              &kp COMMA    &kp DOT          &kp FSLH
-                            &kp TAB                        &lt 1 SPACE  &kp C_MUTE  &lt 2 BACKSPACE                &kp C_MUTE
+&kp Q             &kp W  &kp E     &kp R  &kp T        &kp Y       &kp U        &kp I  &kp O           &kp P
+&lt 1 A           &kp S  &kp D     &kp F  &kp G        &kp H       &kp J        &kp K  &kp L           &kp RET
+&mt LEFT_SHIFT Z  &kp X  &kp C     &kp V  &kp B        &kp B       &kp N        &kp M  &kp DOT         &kp SEMI
+                         &kp LGUI         &lt 2 SPACE  &kp C_MUTE  &lt 3 SPACE         &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -95,28 +57,46 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp N5   &kp NUMBER_6  &kp N7           &kp N8     &kp N9  &kp N0
-&bootloader   &trans        &kp LC(UP_ARROW)  &trans        &kp F12  &kp MINUS     &kp EQUAL        &kp GRAVE  &trans  &kp SQT
-&trans        &trans        &trans            &trans        &trans   &trans        &trans           &trans     &trans  &trans
-                            &trans                          &trans   &trans        &kp RIGHT_SHIFT             &trans
+&kp TILDE    &kp RC(Q)     &kp RC(W)      &kp RC(E)  &kp RC(R)  &kp RC(T)  &kp LEFT_BRACE   &kp UP_ARROW  &kp RIGHT_BRACE  &kp BACKSPACE
+&bootloader  &kp RC(A)     &kp RC(S)      &kp RC(D)  &kp RC(F)  &kp RC(G)  &kp LEFT         &kp DOWN      &kp RIGHT        &kp SQT
+&trans       &kp LA(LEFT)  &kp LA(RIGHT)  &kp RC(C)  &kp RC(V)  &kp UNDER  &kp DLLR         &kp AMPS      &kp COMMA        &kp SLASH
+                           &kp LEFT_ALT              &kp LCTRL  &trans     &kp RIGHT_SHIFT                &kp CAPS
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESC       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans  &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN  &trans
-&kp CAPSLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp AT_SIGN      &trans  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &trans
-&kp DELETE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &trans  &trans       &trans          &trans         &trans
-                               &trans                            &trans           &trans  &trans                       &trans
+&kp TAB        &kp F1  &kp F2             &kp F3   &kp F4   &kp N7  &kp N8  &kp N9  &kp EQUAL  &kp BSPC
+&kp ESCAPE     &kp F5  &kp F6             &kp F7   &kp F8   &kp N4  &kp N5  &kp N6  &kp MINUS  &kp DELETE
+&kp LS(LG(Z))  &kp F9  &kp F10            &kp F11  &kp F12  &kp N1  &kp N2  &kp N3  &kp DOT    &kp COLON
+                       &kp LS(LA(LG(V)))           &trans   &trans  &kp N0          &kp X
             >;
         };
 
         layer_3 {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans                &trans  &trans  &trans          &trans
+&kp GRAVE   &kp C_PREVIOUS  &kp C_PLAY    &kp C_NEXT    &bt BT_DISC 0  &kp AMPS  &kp STAR   &kp LPAR   &kp PLUS   &kp RPAR
+&trans      &kp C_VOL_UP    &kp C_MUTE    &kp C_VOL_DN  &bt BT_DISC 1  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp DQT
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_DISC 2  &kp EXCL  &kp AT     &kp HASH   &kp PIPE   &kp QMARK
+                            &trans                      &mo 4          &trans    &trans                &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &kp LC(LA(LG(Y)))  &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))      &kp LA(LG(LC(O)))    &trans
+&trans  &trans  &trans  &trans  &trans  &kp LA(LC(LG(H)))  &kp LA(LC(LG(J)))  &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))    &kp LA(LC(LG(ENTER)))
+&trans  &trans  &trans  &trans  &trans  &kp LA(LC(LG(N)))  &kp LC(LA(LG(M)))  &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(DOT)))  &trans
+                &trans          &trans  &ext_power EP_TOG  &trans                                    &mo 5
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans
+                &trans          &trans  &bootloader  &trans          &trans
             >;
         };
     };
