@@ -27,7 +27,7 @@
         };
 
         softoff {
-            bindings = <&kp A>;
+            bindings = <&soft_off>;
             key-positions = <0 1 28 29>;
         };
     };
