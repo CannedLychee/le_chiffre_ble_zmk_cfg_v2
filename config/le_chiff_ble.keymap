@@ -87,7 +87,7 @@
 &trans  &trans  &trans  &trans  &trans  &kp LC(LA(LG(Y)))  &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))      &kp LA(LG(LC(O)))    &trans
 &trans  &trans  &trans  &trans  &trans  &kp LA(LC(LG(H)))  &kp LA(LC(LG(J)))  &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))    &kp LA(LC(LG(ENTER)))
 &trans  &trans  &trans  &trans  &trans  &kp LA(LC(LG(N)))  &kp LC(LA(LG(M)))  &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(DOT)))  &trans
-                &trans          &trans  &ext_power EP_TOG  &trans                                    &mo 5
+                &trans          &trans  &soft_off  &trans                                    &mo 5
             >;
         };
 
