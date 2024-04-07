@@ -550,9 +550,7 @@ path.combo {
 </g>
 <g transform="translate(480, 80)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 71%">AC</tspan><tspan x="0" dy="1.0em" style="font-size: 71%">REFRESH</tspan>
-</text>
+<text x="0" y="0" class="key tap">LG(R)</text>
 </g>
 <g transform="translate(640, 280)" class="key keypos-33">
 <rect rx="4" ry="4" x="-78" y="-38" width="157" height="77" class="key"/>

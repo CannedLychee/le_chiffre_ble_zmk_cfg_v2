@@ -33,7 +33,7 @@ layers:
   - {t: ;, s: ':'}
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - AC REFRESH
+  - LG(R)
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - $$mdi:apple-keyboard-shift$$
   '1':
