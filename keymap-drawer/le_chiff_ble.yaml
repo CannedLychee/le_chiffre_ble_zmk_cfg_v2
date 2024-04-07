@@ -33,7 +33,7 @@ layers:
   - {t: ;, s: ':'}
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - $$mdi:volume-off$$
+  - F5
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - $$mdi:apple-keyboard-shift$$
   '1':
@@ -52,7 +52,7 @@ layers:
   - RC(S)
   - RC(D)
   - RC(F)
-  - RC(G)
+  - {t: \, s: '|'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
