@@ -61,10 +61,10 @@
 
         layer_1 {
             bindings = <
-&kp TILDE    &kp RC(Q)     &kp RC(W)      &kp RC(E)  &kp RC(R)  &kp RC(T)      &kp LEFT_BRACE   &kp UP_ARROW  &kp RIGHT_BRACE  &kp BACKSPACE
-&bootloader  &kp RC(A)     &kp RC(S)      &kp RC(D)  &kp RC(F)  &kp BACKSLASH  &kp LEFT         &kp DOWN      &kp RIGHT        &kp SQT
-&trans       &kp LA(LEFT)  &kp LA(RIGHT)  &kp RC(C)  &kp RC(V)  &kp UNDER      &kp DLLR         &kp AMPS      &kp COMMA        &kp SLASH
-                           &kp LEFT_ALT              &kp LCTRL  &trans         &kp RIGHT_SHIFT                &kp CAPS
+&kp TILDE    &kp RC(Q)     &kp RC(W)      &kp RC(E)  &kp RC(R)  &kp RC(T)      &kp LEFT_BRACKET  &kp UP_ARROW  &kp RIGHT_BRACKET  &kp BACKSPACE
+&bootloader  &kp RC(A)     &kp RC(S)      &kp RC(D)  &kp RC(F)  &kp BACKSLASH  &kp LEFT          &kp DOWN      &kp RIGHT          &kp SQT
+&trans       &kp LA(LEFT)  &kp LA(RIGHT)  &kp RC(C)  &kp RC(V)  &kp UNDER      &kp DLLR          &kp AMPS      &kp COMMA          &kp SLASH
+                           &kp LEFT_ALT              &kp LCTRL  &trans         &kp RIGHT_SHIFT                 &kp CAPS
             >;
         };
 
