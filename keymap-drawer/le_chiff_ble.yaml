@@ -43,9 +43,9 @@ layers:
   - RC(E)
   - RC(R)
   - RC(T)
-  - '{'
+  - {t: '[', s: '{'}
   - $$mdi:arrow-up-bold$$
-  - '}'
+  - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:progress-download$$', type: held}
   - RC(A)
