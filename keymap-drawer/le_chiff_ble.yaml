@@ -11,93 +11,199 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
-  - {t: S, s: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, h: '1'}
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, s: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
-  - Z
+  - J
+  - K
+  - L
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
   - B
+  - B
   - N
   - M
-  - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - $$mdi:volume-off$$
-  - {t: '$$mdi:backspace$$', h: '2'}
-  - $$mdi:apple-keyboard-control$$
-  '1':
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - {t: '5', s: '%'}
-  - '6'
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - LC(UP ARROW)
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F12
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ;, s: ':'}
+  - LGUI
+  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - Gui+ R
+  - {t: '$$mdi:keyboard-space$$', h: '3'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  '2':
-  - $$mdi:keyboard-esc$$
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP 0
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PgUp
+  '1':
+  - '~'
+  - Ctl+ Q
+  - Ctl+ W
+  - Ctl+ E
+  - Ctl+ R
+  - Ctl+ T
+  - {t: '[', s: '{'}
   - $$mdi:arrow-up-bold$$
-  - PgDn
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-caps$$
-  - KP 4
-  - KP 5
-  - KP 6
-  - '@'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:progress-download$$', type: held}
+  - Ctl+ A
+  - Ctl+ S
+  - Ctl+ D
+  - Ctl+ F
+  - {t: \, s: '|'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+ $$mdi:arrow-left-bold$$
+  - Alt+ $$mdi:arrow-right-bold$$
+  - Ctl+ C
+  - Ctl+ V
+  - _
+  - $
+  - '&'
+  - {t: ',', s: <}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-caps$$
+  '2':
+  - $$mdi:keyboard-tab$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '=', s: +}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
   - $$mdi:backspace-reverse-outline$$
-  - KP 1
-  - KP 2
-  - KP 3
+  - Sft+Gui+ Z
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: ., s: '>'}
+  - ':'
+  - Sft+Alt+Gui+ V
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
+  - X
+  '3':
+  - {t: '`', s: '~'}
+  - PREVIOUS
+  - PLAY
+  - $$mdi:skip-next$$
+  - {t: BT DISC, h: '0'}
+  - '&'
+  - '*'
+  - (
+  - +
+  - )
+  - Alt+ $$mdi:keyboard-tab$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
+  - {t: BT DISC, h: '1'}
+  - $
+  - '%'
+  - ^
+  - _
+  - '"'
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: BT DISC, h: '2'}
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - '?'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '4'
+  - $$mdi:volume-off$$
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  '4':
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Alt+Gui+ Y
+  - Alt+Ctl+Gui+ U
+  - Alt+Ctl+Gui+ I
+  - Alt+Gui+Ctl+ O
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+Ctl+Gui+ H
+  - Alt+Ctl+Gui+ J
+  - Alt+Ctl+Gui+ K
+  - Alt+Ctl+Gui+ L
+  - {t: 'Alt+Ctl+Gui+ $$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+Ctl+Gui+ N
+  - Ctl+Alt+Gui+ M
+  - {t: 'Alt+Ctl+Gui+ ,', s: Alt+Ctl+Gui+ <}
+  - {t: Alt+Ctl+Gui+ ., s: Alt+Ctl+Gui+ >}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - '&soft_off'
+  - {type: held}
+  - '5'
+  '5':
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,59 +213,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  '3':
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
+  - {type: held}
+  - {type: held}
 combos:
-- p: [3, 2]
-  k: '['
-- p: [6, 7]
-  k: ']'
-- p: [12, 13]
-  k: (
-- p: [16, 17]
-  k: )
-- p: [22, 23]
-  k: '{'
-- p: [27, 26]
-  k: '}'
-- p: [4, 5]
-  k: \
-- p: [14, 15]
-  k: '|'
-- p: [19, 18]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [27, 28]
+  k: <
+- p: [28, 29]
+  k: '>'
+- p: [0, 1, 28, 29]
+  k: '&soft_off'
