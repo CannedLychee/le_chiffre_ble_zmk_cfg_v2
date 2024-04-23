@@ -965,7 +965,9 @@ path.combo {
 </g>
 <g transform="translate(200, 40)" class="key keypos-2">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">PLAY</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.5em">PLAY</tspan><tspan x="0" dy="1.0em">PAUSE</tspan>
+</text>
 </g>
 <g transform="translate(280, 40)" class="key keypos-3">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
