@@ -21,11 +21,11 @@ layers:
   - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
   - X
   - C
   - V
-  - B
   - B
   - N
   - M
@@ -35,7 +35,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '2'}
   - Gui+ R
   - {t: '$$mdi:keyboard-space$$', h: '3'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   '1':
   - '~'
   - Ctl+ Q
@@ -217,9 +217,17 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [27, 28]
+- p: [27, 26]
   k: <
-- p: [28, 29]
+- p: [28, 27]
   k: '>'
-- p: [0, 1, 28, 29]
-  k: '&soft_off'
+- p: [6, 7]
+  k: '['
+- p: [7, 8]
+  k: ']'
+- p: [16, 17]
+  k: (
+- p: [17, 18]
+  k: )
+- p: [29, 28]
+  k: ','
