@@ -21,11 +21,11 @@ layers:
   - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
   - V
+  - $$mdi:apple-keyboard-shift$$
   - B
   - N
   - M
