@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Z
+  - {t: '$$mdi:apple-keyboard-shift$$', h: Z}
   - X
   - C
   - V
@@ -223,11 +223,19 @@ combos:
   k: '>'
 - p: [6, 7]
   k: '['
+  l: [default]
 - p: [7, 8]
   k: ']'
+  l: [default]
 - p: [16, 17]
   k: (
 - p: [17, 18]
   k: )
 - p: [29, 28]
   k: ','
+- p: [6, 7]
+  k: '{'
+  l: ['2']
+- p: [7, 8]
+  k: '}'
+  l: ['2']
