@@ -105,7 +105,7 @@ layers:
   - ':'
   - Sft+Alt+Gui+ V
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
   - {t: '0', s: )}
   - X
   '3':

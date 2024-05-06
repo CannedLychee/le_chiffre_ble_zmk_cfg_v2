@@ -936,9 +936,9 @@ path.combo {
 <g transform="translate(320, 280)" class="key held keypos-31">
 <rect rx="4" ry="4" x="-78" y="-38" width="157" height="77" class="key held"/>
 </g>
-<g transform="translate(480, 80)" class="key trans keypos-32">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(480, 80)" class="key keypos-32">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">HOME</text>
 </g>
 <g transform="translate(640, 280)" class="key keypos-33">
 <rect rx="4" ry="4" x="-78" y="-38" width="157" height="77" class="key"/>
