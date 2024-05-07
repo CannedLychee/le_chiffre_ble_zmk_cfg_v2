@@ -19,7 +19,6 @@
         less {
             bindings = <&kp LT>;
             key-positions = <27 26>;
-            timeout-ms = <0>;
         };
 
         more {
