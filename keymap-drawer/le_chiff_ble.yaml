@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: tominabox1/le_chiffre/rev2}
+layout: {zmk_keyboard: le_chiff_ble}
 layers:
-  default:
+  Qwerty:
   - Q
   - W
   - E
@@ -33,35 +33,35 @@ layers:
   - {t: ;, s: ':'}
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - Gui+ R
+  - Gui+R
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - $$mdi:apple-keyboard-control$$
   '1':
   - '~'
-  - Ctl+ Q
-  - Ctl+ W
-  - Ctl+ E
-  - Ctl+ R
-  - Ctl+ T
+  - Ctl+Q
+  - Ctl+W
+  - Ctl+E
+  - Ctl+R
+  - Ctl+T
   - {t: '[', s: '{'}
   - $$mdi:arrow-up-bold$$
   - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:progress-download$$', type: held}
-  - Ctl+ A
-  - Ctl+ S
-  - Ctl+ D
-  - Ctl+ F
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
   - {t: \, s: '|'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+ $$mdi:arrow-left-bold$$
-  - Alt+ $$mdi:arrow-right-bold$$
-  - Ctl+ C
-  - Ctl+ V
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
+  - Ctl+C
+  - Ctl+V
   - _
   - $
   - '&'
@@ -93,7 +93,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - $$mdi:backspace-reverse-outline$$
-  - Sft+Gui+ Z
+  - Sft+Gui+Z
   - F9
   - F10
   - F11
@@ -103,7 +103,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
   - ':'
-  - Sft+Alt+Gui+ V
+  - Sft+Alt+Gui+V
   - {type: held}
   - HOME
   - {t: '0', s: )}
@@ -119,7 +119,7 @@ layers:
   - (
   - +
   - )
-  - Alt+ $$mdi:keyboard-tab$$
+  - Alt+$$mdi:keyboard-tab$$
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
@@ -150,30 +150,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Alt+Gui+ Y
-  - Alt+Ctl+Gui+ U
-  - Alt+Ctl+Gui+ I
-  - Alt+Gui+Ctl+ O
+  - Ctl+Alt+Gui+Y
+  - Alt+Ctl+Gui+U
+  - Alt+Ctl+Gui+I
+  - Alt+Gui+Ctl+O
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+Ctl+Gui+ H
-  - Alt+Ctl+Gui+ J
-  - Alt+Ctl+Gui+ K
-  - Alt+Ctl+Gui+ L
-  - {t: 'Alt+Ctl+Gui+ $$mdi:keyboard-return$$', type: enter}
+  - Alt+Ctl+Gui+H
+  - Alt+Ctl+Gui+J
+  - Alt+Ctl+Gui+K
+  - Alt+Ctl+Gui+L
+  - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+Ctl+Gui+ N
-  - Ctl+Alt+Gui+ M
-  - {t: 'Alt+Ctl+Gui+ ,', s: Alt+Ctl+Gui+ <}
-  - {t: Alt+Ctl+Gui+ ., s: Alt+Ctl+Gui+ >}
+  - Alt+Ctl+Gui+N
+  - Ctl+Alt+Gui+M
+  - {t: 'Alt+Ctl+Gui+,', s: Alt+Ctl+Gui+<}
+  - {t: Alt+Ctl+Gui+., s: Alt+Ctl+Gui+>}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -222,17 +222,17 @@ combos:
 - p: [28, 27]
   k: '>'
 - p: [6, 7]
-  k: '['
-  l: [default]
+  k: {t: '[', s: '{'}
+  l: [Qwerty]
 - p: [7, 8]
-  k: ']'
-  l: [default]
+  k: {t: ']', s: '}'}
+  l: [Qwerty]
 - p: [16, 17]
   k: (
 - p: [17, 18]
   k: )
 - p: [29, 28]
-  k: ','
+  k: {t: ',', s: <}
 - p: [6, 7]
   k: '{'
   l: ['2']
